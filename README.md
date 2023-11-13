@@ -13,6 +13,8 @@
     - (common embedding + euclidean distance-based ranking + KNN search) and (common embedding + probabiliry-based ranking + KNN search)
     - Embedding Model:
       - Adopted sentence-transformer model `all-MiniLM-L6-v2`
+        - Problem: too slow to embed all sentences in NFCorpus since we have (110,000 * 3612) as number of queries * doc pairs.
+        - Solution: change the embedding model to BioBERT model "monologg/biobert_v1.1_pubmed" 
       - More models: ([sentence-transformers](https://www.sbert.net))
     - Dataset:
       - [Signal1M(news + related tweets)](https://research.signal-ai.com/datasets/signal1m-tweetir.html)
