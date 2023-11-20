@@ -31,16 +31,27 @@
      - euclidean dist-based ranking implemented by scikilearn
      - Metrics:
         - Precision:
-           - How do we define the relevant items in our case out of K(i.e., true positives)?
+           - How do we define the relevant items in our case out of K(i.e., true positives)? [TO-DO 1]
         - Recall@1 and Recall@10
            - For each query, extract most relevant documents and compute their avg euclidean distance as `threshold`.
            - If avg euclidean distances btw top-k results and query < threshold, then mark them as relevant item(1) and 0 vice versa.
         - Query Runtime: Embedding time + Search time
            - Single Query implemented in colab
-           - Need to compute avg query runtime
-        - More Metrics:    
+           - Need to compute avg query runtime [TO-DO 2]
+        - More Metrics: [TO-DO 3]
            - [Faiss](https://www.pinecone.io/learn/series/faiss/vector-indexes/) (Still implementing)
              - [Github](https://github.com/facebookresearch/faiss)
              - when/where to use?
+   - (common embedding + probability-based ranking + KNN search)
+      - Task: Information Retrieval
+      - Dataset: NFCorpus
+         - Input X: [query] + [SEP] + [document] ('str' type)  {Is there a better way to construct X?}[TO-DO 4]
+         - label y: relevant scores (1,2,3)
+      - Model:
+         - What are deep learning models used for information retrieval? Should we use a simple one to implement the code first?[TO-DO 5]
+      - Computing Resources [TO-DO 6]
+        
+        
+          
                
     
