@@ -28,7 +28,7 @@
      - Tasks: Information Retrieval  
      - Dataset: NFCorpus
      - Embedding Model: BioBERT (word embedding -> sentence embedding by avg pooling)
-     - euclidean dist-based ranking implemented by scikilearn
+     - euclidean dist-based ranking implemented by sklearn
      - Metrics:
         - Precision:
            - How do we define the relevant items in our case out of K(i.e., true positives)? [TO-DO 1]
