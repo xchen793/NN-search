@@ -45,10 +45,10 @@
    - (common embedding + probability-based ranking + KNN search)
       - Task: Information Retrieval
       - Dataset: NFCorpus
-         - Input X: [query] + [SEP] + [document] ('str' type)  {Is there a better way to construct X?}[TO-DO 4]
+         - Input X: Start with the first paper the paper in the arxiv. {Is there a better way to construct X?}[TO-DO 4]
          - label y: relevant scores (1,2,3)
       - Model:
-         - What are deep learning models used for information retrieval? Should we use a simple one to implement the code first?[TO-DO 5]
+         - Choose the model (in the first paper) used for information retrieval? Should we use a simple one to implement the code first?[TO-DO 5]
       - Computing Resources [TO-DO 6]
         
         
