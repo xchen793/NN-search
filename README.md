@@ -33,8 +33,7 @@
         - Precision:
            - How do we define the relevant items in our case out of K(i.e., true positives)? [TO-DO 1]
         - Recall@1 and Recall@10
-           - For each query, extract most relevant documents and compute their avg euclidean distance as `threshold`.
-           - If avg euclidean distances btw top-k results and query < threshold, then mark them as relevant item(1) and 0 vice versa.
+           - Compute recall refered to the previous work on this dataset.(TO-DO 1)
         - Query Runtime: Embedding time + Search time
            - Single Query implemented in colab
            - Need to compute avg query runtime [TO-DO 2]
