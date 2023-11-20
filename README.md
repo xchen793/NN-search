@@ -22,4 +22,25 @@
       - [NFCorpus](https://www.cl.uni-heidelberg.de/statnlpgroup/nfcorpus/)
     - Code:
       [Demo](https://colab.research.google.com/drive/1joFab0X8wMZ9PZn32ojT22sF5yM8upXb?usp=sharing)
+
+## Week 4(11/13-11/20)
+  - (common embedding + euclidean distance-based ranking + KNN search) - DONE
+     - Tasks: Information Retrieval  
+     - Dataset: NFCorpus
+     - Embedding Model: BioBERT (word embedding -> sentence embedding by avg pooling)
+     - euclidean dist-based ranking implemented by scikilearn
+     - Metrics:
+        - Precision:
+           - How do we define the relevant items in our case out of K(i.e., true positives)?
+        - Recall@1 and Recall@10
+           - For each query, extract most relevant documents and compute their avg euclidean distance as `threshold`.
+           - If avg euclidean distances btw top-k results and query < threshold, then mark them as relevant item(1) and 0 vice versa.
+        - Query Runtime: Embedding time + Search time
+           - Single Query implemented in colab
+           - Need to compute avg query runtime
+        - More Metrics:    
+           - [Faiss](https://www.pinecone.io/learn/series/faiss/vector-indexes/) (Still implementing)
+             - [Github](https://github.com/facebookresearch/faiss)
+             - when/where to use?
+               
     
