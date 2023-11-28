@@ -49,6 +49,11 @@
       - Model:
          - Choose the model (in the first paper) used for information retrieval? Should we use a simple one to implement the code first?[TO-DO 5]
       - Computing Resources [TO-DO 6]
+    
+## Week 5 (11/21 - 11/27)
+Preliminary Results in G-sheet: https://docs.google.com/spreadsheets/d/1M5X27Qa8eNfnVlC3XysKAVAXcbNI5fi6j1g-92u4-po/edit#gid=2064130419
+
+
         
         
           
