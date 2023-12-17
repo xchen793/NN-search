@@ -54,6 +54,17 @@
 Preliminary Results in G-sheet: https://docs.google.com/spreadsheets/d/1M5X27Qa8eNfnVlC3XysKAVAXcbNI5fi6j1g-92u4-po/edit#gid=2064130419
 
 
+## Deliverables (before 12/18)
+- Run experiment 1 and 2: [demo-beir.ipynb] (https://github.com/xchen793/NN-search/blob/main/demo_beir.ipynb)
+- Code Implementation:
+    - beir/retrieval/embedding.py
+    - beir/retrieval/search/dense/knn_search.py
+    - beir/retrieval/search/dense/prob_index.py
+    - beir/retrieval/search/dense/prob_knn_search.py
+      
+
+
+
         
         
           
